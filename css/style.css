@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #333;
+    overflow: hidden;
+}
+
+a {
+    color: #fff;
+    display: none;
+}
+
+#usernameFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#usernameFormContainer h1 {
+    color: #fff;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+#usernameForm {
+    display: flex;
+}
+
+#usernameForm input[type="text"] {
+    background: #676767;
+    border: none;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+#usernameForm input[type='submit'], #send button {
+    padding: 1.2rem;
+    background: orange;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+#usernameForm input[type='submit']:hover, #send button:hover {
+    background-color: royalblue;
+}
+
+.chatContainer {
+    height: 100vh;
+}
+
+#chatMessages {
+    height: 88vh;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#send {
+    height: 12vh;
+    display: flex;
+}
+
+#send textarea {
+    width: 90vw;
+    font-size: 1.3rem;
+    padding: .3rem 1.5rem;
+    resize: none;
+    color: #fff;
+    background: #333;
+    outline: none;
+    border: none;
+    border-top: 1px solid #676767;
+}
+
+#send button {
+    width: 10vw;
+}
+
+.message {
+    margin: .5rem 0;
+    border-top: 1px solid #474747;
+    padding: .5rem;
+}
+
+.message p, .message small {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.message small {
+    font-size: .7rem;
+}
+
+.message p {
+    white-space: pre-wrap;
+}
+
+.message strong {
+    color: orange;
+    margin-right: 1rem;
+}
+
+/*
+ let div = document.createElement('div'),
+                        p = document.createElement('p'),
+                        small = document.createElement('small'),
+                        strong = document.createElement('strong');
+ */
